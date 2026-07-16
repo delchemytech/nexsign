@@ -36,3 +36,6 @@ dist-ssr
 out/
 next-env.d.ts
 
+# OpenNext build output
+.open-next/
+

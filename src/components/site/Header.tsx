@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logoAsset from "@/assets/nexsign-logo.png.asset.json";
+import logoImg from "@/assets/nexsign-logo.png";
 import { whatsappUrl } from "@/lib/site";
 
 const nav = [
@@ -37,12 +38,12 @@ export function Header() {
     >
       <div className="container-page flex h-16 items-center justify-between gap-6">
         <Link href="/" className="flex items-center gap-2" aria-label="neXsign home">
-          <img
-            src={logoAsset.url}
+          <Image
+            src={logoImg}
             alt="neXsign — Signage & Metal Work"
-            className="h-9 w-auto"
-            width={160}
-            height={36}
+            className="h-12 w-auto"
+            priority
+            unoptimized
           />
         </Link>
 

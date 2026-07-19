@@ -14,8 +14,8 @@ export const site = {
   city: "Abu Dhabi",
   since: 2004,
   email: "info@nexsign.ae",
-  phones: ["+971 50 761 3383", "+971 2 555 8890"],
-  whatsapp: "971507613383",
+  phones: ["+971 58 66 77 243", "+971 50 761 3383"],
+  whatsapp: "971586677243",
   address: {
     line1: "Mussafah 37",
     line2: "Mussafah Industrial Area",

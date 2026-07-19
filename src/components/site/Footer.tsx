@@ -1,6 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, Phone, MapPin } from "lucide-react";
-import logoAsset from "@/assets/nexsign-logo.png.asset.json";
+import footerLogoImg from "@/assets/nexsign-footer-logo2.png";
 import { services, site } from "@/lib/site";
 
 export function Footer() {
@@ -8,12 +9,11 @@ export function Footer() {
     <footer className="mt-24 bg-ink text-ink-foreground">
       <div className="container-page grid gap-12 py-16 md:grid-cols-4">
         <div className="md:col-span-2">
-          <img
-            src={logoAsset.url}
+          <Image
+            src={footerLogoImg}
             alt="neXsign"
-            className="h-10 w-auto brightness-0 invert"
-            width={180}
-            height={40}
+            className="h-16 w-auto"
+            unoptimized
           />
           <p className="mt-4 max-w-md text-sm leading-relaxed text-ink-foreground/70">
             Full-service signage and metal work company based in Abu Dhabi. Since {site.since},

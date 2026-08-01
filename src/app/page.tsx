@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Compass, Factory, PenTool, Truck } from "lucide-react";
-import heroImg from "@/assets/hero-workshop.jpg";
 import { services, site, whatsappUrl, getImgSrc } from "@/lib/site";
 
 const process = [
@@ -56,8 +55,8 @@ export default function Home() {
       <section className="relative isolate overflow-hidden bg-ink text-ink-foreground">
         <div className="absolute inset-0 -z-10">
           <img
-            src={heroImg.src}
-            alt="Illuminated 3D metal signage letters in the neXsign workshop"
+            src="/images/imgi_55_ed30c032b62327573c8913f3f8ca5882.png"
+            alt="Macro detail of illuminated 3D stainless steel signage letter inside neXsign workshop"
             className="h-full w-full object-cover opacity-40"
             width={1920}
             height={1280}
@@ -196,8 +195,8 @@ export default function Home() {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-md border border-border">
             <img
-              src={heroImg.src}
-              alt="Fabrication of illuminated 3D signage at neXsign"
+              src="/images/imgi_8_ddb0e0fa4efe1b6f93de990a2302ebe5.png"
+              alt="Craftsman technician wiring illuminated signage at neXsign Mussafah workshop"
               loading="lazy"
               className="h-full w-full object-cover"
               width={1920}

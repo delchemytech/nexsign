@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import aboutImg from "@/assets/about-workshop.jpg";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -12,7 +11,7 @@ export const metadata: Metadata = {
     title: "About neXsign — Signage Since 2004",
     description:
       "A full-service signage and metal work company based in Mussafah, Abu Dhabi. Serving the UAE since 2004.",
-    images: [{ url: aboutImg.src }],
+    images: [{ url: "/images/imgi_47_aac2b01f51647cc25a37ea4185a40766.png" }],
   },
 };
 
@@ -37,8 +36,8 @@ export default function AboutPage() {
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <div className="overflow-hidden rounded-md border border-border">
             <img
-              src={aboutImg.src}
-              alt="Interior of the neXsign workshop with workers fabricating illuminated letters"
+              src="/images/imgi_47_aac2b01f51647cc25a37ea4185a40766.png"
+              alt="Industrial CNC laser cutter precision engraving metal at neXsign Mussafah facility"
               loading="lazy"
               width={1600}
               height={900}

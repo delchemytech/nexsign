@@ -53,7 +53,7 @@ export const services: Service[] = [
     title: "Exterior Signage",
     short:
       "Illuminated 3D letters, light boxes, fascia and façade signage built to withstand UAE weather.",
-    image: exteriorImg,
+    image: "/images/imgi_45_1ae8a2adf67f5c20c5ccf01aa4241830.png",
     intro:
       "Effective exterior signage is often the difference between being seen and being missed. We engineer sign systems that make your location a landmark.",
     body: [
@@ -73,7 +73,7 @@ export const services: Service[] = [
     title: "Interior Signage",
     short:
       "Reception marks, wayfinding, floor graphics and functional interior signage that shape brand experience.",
-    image: interiorImg,
+    image: "/images/imgi_71_0b9e6960d6ac056da0f7660244d3c0a5.png",
     intro:
       "Well-crafted interior signage sets the tone the moment a customer walks in. We produce interior systems that are both statement pieces and quietly functional.",
     body: [
@@ -93,7 +93,7 @@ export const services: Service[] = [
     title: "Pylon Signs",
     short:
       "Free-standing pylon and monument signs designed for high visibility and low maintenance.",
-    image: pylonImg,
+    image: "/images/imgi_37_38932666bae97b1aa92f47e8c4a69430.jpeg",
     intro:
       "Pylon signage gives your business advance notice on the road. Often the first impression a customer has, it's a high-impact, low-maintenance investment.",
     body: [
@@ -113,7 +113,7 @@ export const services: Service[] = [
     title: "Vehicle Graphics",
     short:
       "Full and partial vehicle wraps, cut vinyl and fleet branding for a rolling advertisement.",
-    image: vehicleImg,
+    image: "/images/imgi_45_d4f461168270f87c804f82359bb8b0a8.png",
     intro:
       "Vehicle branding is one of the most cost-effective ways to put your name in front of thousands of potential customers every day.",
     body: [
@@ -132,7 +132,7 @@ export const services: Service[] = [
     slug: "hoarding-and-banners",
     title: "Hoarding & Banners",
     short: "Large-format hoarding, banners and site branding to build presence at scale.",
-    image: hoardingImg,
+    image: "/images/imgi_41_7201091fd8bd4e897845ed16b284c3d4.png",
     intro:
       "Construction hoarding and large-format banners give you an outsized presence quickly — ideal for building reputation and driving short-term action.",
     body: [
@@ -151,7 +151,7 @@ export const services: Service[] = [
     slug: "etching-and-engraving",
     title: "Etching & Engraving",
     short: "Laser-engraved nameplates, plaques and industrial tags in metal, acrylic and plastics.",
-    image: etchingImg,
+    image: "/images/imgi_68_93c20b35bbe48dd715612fb7efd38ebe.png",
     intro:
       "We manufacture nameplates, memorial plaques, badges and industrial identification tags using modern large-format laser engraving and CAD/CAM tooling.",
     body: [
@@ -170,7 +170,7 @@ export const services: Service[] = [
     slug: "traffic-signs",
     title: "Traffic Signs",
     short: "Permanent and temporary road signage manufactured to UAE and international standards.",
-    image: trafficImg,
+    image: "/images/imgi_41_431ae427367a935f46fdc3ed2c0d71b8.png",
     intro:
       "We manufacture all kinds of road and traffic signs — permanent or temporary — in compliance with UAE standards and using 3M reflective sheeting.",
     body: [
@@ -190,7 +190,7 @@ export const services: Service[] = [
     title: "Safety Signs",
     short:
       "ISO 3864-compliant safety, warning and mandatory signs for industrial and public spaces.",
-    image: safetyImg,
+    image: "/images/imgi_2_baa175ae3c06ec200fa85bf21e261e4c.png",
     intro:
       "Safety signs inform, instruct and warn — and they must speak a universal visual language. We manufacture safety signage to ISO 3864 standards for use across industrial and public spaces.",
     body: [

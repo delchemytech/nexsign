@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { site } from "@/lib/site";
 
@@ -34,13 +35,13 @@ export default function AboutPage() {
 
       <section className="container-page py-20">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-          <div className="overflow-hidden rounded-md border border-border">
-            <img
+          <div className="relative aspect-[16/9] overflow-hidden rounded-md border border-border">
+            <Image
               src="/images/imgi_47_aac2b01f51647cc25a37ea4185a40766.webp"
               alt="Industrial CNC laser cutter precision engraving metal at neXsign Mussafah facility"
-              loading="lazy"
-              width={1600}
-              height={900}
+              width={800}
+              height={450}
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="h-full w-full object-cover"
             />
           </div>

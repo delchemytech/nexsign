@@ -1,11 +1,12 @@
 import type { NextConfig } from "next";
 import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
 
-// Initialize OpenNext Cloudflare development environment simulation
-initOpenNextCloudflareForDev();
+// Initialize OpenNext Cloudflare development environment simulation only in dev
+if (process.env.NODE_ENV === "development") {
+  initOpenNextCloudflareForDev();
+}
 
 const nextConfig: NextConfig = {
-  // We can add configuration options here if needed
   reactStrictMode: true,
 };
 

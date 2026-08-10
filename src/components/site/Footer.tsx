@@ -73,9 +73,23 @@ export function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="container-page flex flex-col items-start justify-between gap-2 py-6 text-xs text-ink-foreground/60 sm:flex-row sm:items-center">
+        <div className="container-page flex flex-col items-center justify-between gap-3 py-6 text-xs text-ink-foreground/60 sm:flex-row">
           <p>© {new Date().getFullYear()} neXsign Signage & Metal Work. All rights reserved.</p>
-          <p>Abu Dhabi · United Arab Emirates</p>
+          <div className="flex flex-wrap items-center gap-3">
+            <p>Abu Dhabi · United Arab Emirates</p>
+            <span className="hidden text-ink-foreground/30 sm:inline">•</span>
+            <p>
+              Built by{" "}
+              <a
+                href="https://www.delchemytech.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-brand transition-colors hover:text-brand/80 hover:underline"
+              >
+                Delchemy Tech
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

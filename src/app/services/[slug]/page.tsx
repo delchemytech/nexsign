@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, CheckCircle2 } from "lucide-react";
 import { services, whatsappUrl, getImgSrc } from "@/lib/site";
@@ -60,12 +61,14 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               <h1 className="mt-3 text-4xl font-semibold sm:text-5xl">{service.title}</h1>
               <p className="mt-5 text-lg text-muted-foreground">{service.intro}</p>
             </div>
-            <div className="overflow-hidden rounded-md border border-border">
-              <img
+            <div className="relative aspect-[4/3] overflow-hidden rounded-md border border-border">
+              <Image
                 src={getImgSrc(service.image)}
                 alt={service.title}
-                width={1200}
-                height={900}
+                width={800}
+                height={600}
+                priority
+                sizes="(max-width: 1024px) 100vw, 40vw"
                 className="h-full w-full object-cover"
               />
             </div>

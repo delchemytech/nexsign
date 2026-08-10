@@ -1,8 +1,21 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "../styles.css";
 import { Header } from "../components/site/Header";
 import { Footer } from "../components/site/Footer";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+  display: "swap",
+});
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -31,15 +44,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
-        />
-      </head>
+    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <body>
         <div className="flex min-h-screen flex-col">
           <Header />

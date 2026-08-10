@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, CheckCircle2, Compass, Factory, PenTool, Truck } from "lucide-react";
 import { services, site, whatsappUrl, getImgSrc } from "@/lib/site";
 
@@ -54,12 +55,14 @@ export default function Home() {
       {/* Hero */}
       <section className="relative isolate overflow-hidden bg-ink text-ink-foreground">
         <div className="absolute inset-0 -z-10">
-          <img
+          <Image
             src="/images/imgi_55_ed30c032b62327573c8913f3f8ca5882.webp"
             alt="Macro detail of illuminated 3D stainless steel signage letter inside neXsign workshop"
-            className="h-full w-full object-cover opacity-40"
-            width={1920}
-            height={1280}
+            fill
+            priority
+            fetchPriority="high"
+            sizes="100vw"
+            className="object-cover opacity-40"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/40" />
         </div>
@@ -136,12 +139,12 @@ export default function Home() {
               className="group flex flex-col overflow-hidden rounded-md border border-border bg-card transition-all hover:-translate-y-1 hover:border-brand hover:shadow-lg"
             >
               <div className="aspect-[4/3] overflow-hidden bg-muted">
-                <img
+                <Image
                   src={getImgSrc(s.image)}
                   alt={s.title}
-                  loading="lazy"
-                  width={1200}
-                  height={900}
+                  width={640}
+                  height={480}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
@@ -194,13 +197,13 @@ export default function Home() {
             </div>
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-md border border-border">
-            <img
+            <Image
               src="/images/imgi_8_ddb0e0fa4efe1b6f93de990a2302ebe5.webp"
               alt="Craftsman technician wiring illuminated signage at neXsign Mussafah workshop"
-              loading="lazy"
+              width={800}
+              height={600}
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="h-full w-full object-cover"
-              width={1920}
-              height={1280}
             />
           </div>
         </div>

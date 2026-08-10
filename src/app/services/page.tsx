@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { services, whatsappUrl, getImgSrc } from "@/lib/site";
 
@@ -39,12 +40,12 @@ export default function ServicesPage() {
               className="group flex flex-col overflow-hidden rounded-md border border-border bg-card transition-all hover:-translate-y-1 hover:border-brand hover:shadow-lg"
             >
               <div className="aspect-[16/10] overflow-hidden bg-muted">
-                <img
+                <Image
                   src={getImgSrc(s.image)}
                   alt={s.title}
-                  loading="lazy"
-                  width={1200}
-                  height={900}
+                  width={640}
+                  height={400}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>

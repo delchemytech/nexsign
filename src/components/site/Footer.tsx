@@ -9,7 +9,13 @@ export function Footer() {
     <footer className="mt-24 bg-ink text-ink-foreground">
       <div className="container-page grid gap-12 py-16 md:grid-cols-4">
         <div className="md:col-span-2">
-          <Image src={footerLogoImg} alt="neXsign" width={248} height={64} className="h-16 w-auto" />
+          <Image
+            src={footerLogoImg}
+            alt="neXsign"
+            width={248}
+            height={64}
+            className="h-16 w-auto"
+          />
           <p className="mt-4 max-w-md text-sm leading-relaxed text-ink-foreground/70">
             Full-service signage and metal work company based in Abu Dhabi. Since {site.since},
             we've designed, fabricated and installed signage that turns brands into landmarks across

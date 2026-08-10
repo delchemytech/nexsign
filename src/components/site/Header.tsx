@@ -41,9 +41,10 @@ export function Header() {
           <Image
             src={logoImg}
             alt="neXsign — Signage & Metal Work"
+            width={186}
+            height={48}
             className="h-12 w-auto"
             priority
-            unoptimized
           />
         </Link>
 

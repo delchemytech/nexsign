@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Mail, Phone, MapPin } from "lucide-react";
-import footerLogoImg from "@/assets/nexsign-footer-logo2.png";
+import footerLogoImg from "@/assets/nexsign-footer-logo2.webp";
 import { services, site } from "@/lib/site";
 
 export function Footer() {

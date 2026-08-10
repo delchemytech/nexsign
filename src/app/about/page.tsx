@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "About neXsign — Signage Since 2004",
     description:
       "A full-service signage and metal work company based in Mussafah, Abu Dhabi. Serving the UAE since 2004.",
-    images: [{ url: "/images/imgi_47_aac2b01f51647cc25a37ea4185a40766.png" }],
+    images: [{ url: "/images/imgi_47_aac2b01f51647cc25a37ea4185a40766.webp" }],
   },
 };
 
@@ -36,7 +36,7 @@ export default function AboutPage() {
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <div className="overflow-hidden rounded-md border border-border">
             <img
-              src="/images/imgi_47_aac2b01f51647cc25a37ea4185a40766.png"
+              src="/images/imgi_47_aac2b01f51647cc25a37ea4185a40766.webp"
               alt="Industrial CNC laser cutter precision engraving metal at neXsign Mussafah facility"
               loading="lazy"
               width={1600}

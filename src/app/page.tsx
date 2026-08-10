@@ -55,7 +55,7 @@ export default function Home() {
       <section className="relative isolate overflow-hidden bg-ink text-ink-foreground">
         <div className="absolute inset-0 -z-10">
           <img
-            src="/images/imgi_55_ed30c032b62327573c8913f3f8ca5882.png"
+            src="/images/imgi_55_ed30c032b62327573c8913f3f8ca5882.webp"
             alt="Macro detail of illuminated 3D stainless steel signage letter inside neXsign workshop"
             className="h-full w-full object-cover opacity-40"
             width={1920}
@@ -195,7 +195,7 @@ export default function Home() {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-md border border-border">
             <img
-              src="/images/imgi_8_ddb0e0fa4efe1b6f93de990a2302ebe5.png"
+              src="/images/imgi_8_ddb0e0fa4efe1b6f93de990a2302ebe5.webp"
               alt="Craftsman technician wiring illuminated signage at neXsign Mussafah workshop"
               loading="lazy"
               className="h-full w-full object-cover"

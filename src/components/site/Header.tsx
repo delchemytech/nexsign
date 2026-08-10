@@ -5,7 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logoImg from "@/assets/nexsign-logo.png";
+import logoImg from "@/assets/nexsign-logo.webp";
 import { whatsappUrl } from "@/lib/site";
 
 const nav = [
